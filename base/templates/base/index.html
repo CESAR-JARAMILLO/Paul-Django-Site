@@ -1,0 +1,58 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'base/style.css' %}">
+    <title>Paul Anthony Garcia</title>
+</head>
+<body class="body">
+
+      <header class="header">
+        <div class="overlay">
+          <div class="header-container">
+                <h1 class="logo">PAUL ANTHONY GARCIA</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main-container">
+          <h2>NEW ALBUM "YOU"</h2>
+          <a href="https://linktr.ee/Picksalot">
+            <img src="{% static 'base/images/album.png' %}" alt="album 'You'">
+          </a>
+          <a href="https://linktr.ee/Picksalot" class="main-button">LISTEN</a>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <hr class="top-line">
+          <a href="https://linktr.ee/Picksalot">
+            <h3>FOLLOW</h3>
+          </a>
+          <hr class="bottom-line">
+          <div class="icons">
+            <a href="https://linktr.ee/Picksalot">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://linktr.ee/Picksalot">
+              <i class="fa-brands fa-reddit fa-2x"></i>
+            </a>
+            <a href="https://linktr.ee/Picksalot">
+              <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://linktr.ee/Picksalot">
+              <i class="fa-brands fa-spotify fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

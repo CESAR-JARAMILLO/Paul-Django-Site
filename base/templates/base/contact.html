@@ -1,3 +1,13 @@
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
 {% load static %}
 
 <!DOCTYPE>
@@ -11,20 +21,13 @@
     <div class="container">
       <h1 id="main-title">Contact</h1>
 
-      <form method='POST' action='.'>
+      <form method='POST' action='.' class="form">
         {% csrf_token %}
 
-          <div class="form-group">
-            {{ form.name }}
-          </div>
-          <div class="form-group">
-            {{ form.email }}
-          </div>
-          <div class="form-group">
-            {{ form.content }}
-          </div>
+        {% bootstrap_form form %}
 
-        <button class='btn'>Submit</button>
+        {% bootstrap_button "Submit" button_type="submit" button_class="btn-primary" size="lg" %}
+
       </form>
     </div>
     

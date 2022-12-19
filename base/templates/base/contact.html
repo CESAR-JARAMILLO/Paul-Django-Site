@@ -1,15 +1,25 @@
+{% load static %}
+
 <!DOCTYPE>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="{% static 'base/contact.css' %}">
+  </head>
   <body>
-    <h1>Contact</h1>
 
-    <form method='POST' action='.'>
-      {% csrf_token %}
+    <div class="container">
+      <h1>Contact</h1>
 
-      {{ form.as_p }}
+      <form method='POST' action='.'>
+        {% csrf_token %}
 
-      <button>Submit</button>
-    </form>
+          {{ form }}
+
+        <button class='btn'>Submit</button>
+      </form>
+    </div>
+    
+    <script src="{% static 'base/scripts/contact.js' %}"></script>
   </body>
 </html>

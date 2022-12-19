@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.body {
+    background-color: #ddf1f4;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url(./images/paul.png);
+    background-size: cover;
+    color: #ddf1f4;
+    min-height: 400px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.header-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container
+.logo {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.main-container {
+    height: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container
+h2 {
+    font-weight: 400;
+}
+
+.main-button {
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background: #1DAFD6;
+    color: #ddf1f4;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container
+hr {
+    border: 2px solid black;
+}
+
+.footer-container
+.top-line{
+    width: 140px;
+}
+
+.footer-container
+.bottom-line{
+    width: 300px;
+}
+
+.footer-container
+h3 {
+    font-weight: 400;
+    color: black;
+}
+
+.footer-container
+.icons {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container
+.icons
+a {
+    color: #1DAFD6;
+}
+
+@media (min-width: 800px) {
+    .header {
+        width: 80%;
+        margin: 30px auto;
+    }
+}

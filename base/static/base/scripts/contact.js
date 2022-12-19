@@ -6,6 +6,7 @@ const textarea = document.querySelector('textarea')
 const div1 = document.createElement('div')
 const div2 = document.createElement('div')
 const div3 = document.createElement('div')
+const button  = document.createElement('button')
 
 div1.classList.add('form-control')
 div1.appendChild(labels[0])
@@ -19,10 +20,14 @@ div3.classList.add('form-control')
 div3.appendChild(labels[2])
 div3.appendChild(textarea)
 
+button.classList.add('btn')
+button.textContent = 'Submit'
+
 
 form.appendChild(div1)
 form.appendChild(div2)
 form.appendChild(div3)
+form.appendChild(button)
 
 labels.forEach(label => {
   label.innerHTML = label.innerText

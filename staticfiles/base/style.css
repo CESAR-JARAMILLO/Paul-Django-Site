@@ -30,12 +30,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header-container
 .logo {
     font-weight: 300;
     font-size: 2.5rem;
+}
+
+.header-container
+.btn {
+    position: absolute;
+    bottom: 40px;
+    background-color: #1DAFD6;
+    border: none;
+    padding: 1rem;
 }
 
 .main {

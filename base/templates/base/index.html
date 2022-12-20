@@ -1,3 +1,11 @@
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
 {% load static %}
 
 
@@ -17,6 +25,8 @@
         <div class="overlay">
           <div class="header-container">
                 <h1 class="logo">PAUL ANTHONY GARCIA</h1>
+                
+                <a href="{% url 'base:contact' %}" class="btn btn-primary">CONTACT ME</a>
           </div>
         </div>
       </header>

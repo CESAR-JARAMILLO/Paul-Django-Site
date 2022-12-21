@@ -29,9 +29,10 @@
     </header>
 
     <div class="form-container">
-      <h2 id="form-title">Contact</h2>
+      
 
       <form method='POST' action='.' class="form">
+        <h2 id="form-title">Contact</h2>
         {% csrf_token %}
 
         {% bootstrap_form form %}

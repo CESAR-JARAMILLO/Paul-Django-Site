@@ -14,19 +14,18 @@ def contact(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            content = form.cleaned_data['content']
+            subject = form.cleaned_data['subject']
 
             html = render_to_string('base/emails/contactform.html', {
                 'name':name,
                 'email':email,
-                'content':content
+                'subject':subject
             })
 
             send_mail('The contact form subject', 'This is the message', 'noreply@code.com', ['cesarjaramillodev@gmail.com'], html_message=html)
 
             return redirect('/')
     else:
-        print('error')
         form = ContactForm()
     
     return render(request, 'base/contact.html', {'form':form})

@@ -7,6 +7,9 @@ from .forms import ContactForm
 def index(request):
     return render(request, 'base/index.html')
 
+def thankyou(request):
+    return render(request, 'base/thankyou.html')
+
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

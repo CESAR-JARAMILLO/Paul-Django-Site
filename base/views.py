@@ -27,7 +27,7 @@ def contact(request):
 
             send_mail('The contact form subject', 'This is the message', 'noreply@code.com', ['cesarjaramillodev@gmail.com'], html_message=html)
 
-            return redirect('/')
+            return redirect('/thankyou/')
     else:
         print('error')
         form = ContactForm()

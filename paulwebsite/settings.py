@@ -40,7 +40,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'paulwebsite.herokuapp.com']
 
 EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'c938d5dce08ab3'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_PORT = '2525'
 
 # Application definition

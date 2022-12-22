@@ -71,6 +71,12 @@ h2 {
     font-weight: 400;
 }
 
+.main-container .btn {
+    background-color: #1DAFD6;
+    border: none;
+    padding: 14px 36px;
+}
+
 .main-button {
     border-radius: 5px;
     width: 120px;

@@ -77,19 +77,6 @@ h2 {
     padding: 14px 36px;
 }
 
-.main-button {
-    border-radius: 5px;
-    width: 120px;
-    height: 40px;
-    background: #1DAFD6;
-    color: #ddf1f4;
-    border: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer-container {
     height: 160px;
     display: flex;

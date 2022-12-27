@@ -29,7 +29,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'paulwebsite.herokuapp.com', 'www.pgarciamusic.com', 'pgarciamusic.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'paulwebsite.herokuapp.com', 'www.picksalot.com', 'picksalot.com']
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'

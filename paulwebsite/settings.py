@@ -31,17 +31,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'paulwebsite.herokuapp.com', 'www.picksalot.com', 'picksalot.com']
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = '587'
-# EMAIL_HOST_USER = 'cesarjaramillodev@gmail.com'
-# EMAIL_HOST_PASSWORD = 'yoomibohyvybbdso'
-# EMAIL_USE_TLS = True
-
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'c938d5dce08ab3'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'cesarjaramillodev@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+
+# EMAIL_HOST = 'smtp.mailtrap.io'
+# EMAIL_HOST_USER = 'c938d5dce08ab3'
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+# EMAIL_PORT = '2525'
 
 # Application definition
 

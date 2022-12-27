@@ -25,7 +25,7 @@ def contact(request):
                 'content':content
             })
 
-            send_mail('The contact form subject', 'This is the message', 'noreply@code.com', ['cesarjaramillodev@gmail.com'], html_message=html)
+            send_mail('The contact form subject', 'This is the message', 'noreply@code.com', ['picslotoguitar@gmail.com'], html_message=html)
 
             return redirect('/thankyou/')
     else:

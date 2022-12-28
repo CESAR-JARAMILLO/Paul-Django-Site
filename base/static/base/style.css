@@ -67,6 +67,32 @@ a {
 }
 
 .main-container
+h3 {
+    margin-top: 80px;
+}
+
+.main-container
+.tip-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container
+.tip-container
+i {
+    margin: 0 20px;
+}
+
+.main-container
+.tip-container
+img {
+    height: 60px;
+    width: 60px;
+    margin: 0 20px;
+}
+
+.main-container
 h2 {
     font-weight: 400;
 }
@@ -75,6 +101,7 @@ h2 {
     background-color: #1DAFD6;
     border: none;
     padding: 14px 36px;
+    margin: 20px 0;
 }
 
 .footer-container {
@@ -83,6 +110,7 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 80px;
 }
 
 .footer-container

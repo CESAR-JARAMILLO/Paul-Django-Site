@@ -68,6 +68,7 @@ header .email {
   background-color: #1DAFD6;
   border: none;
 }
+
 @media (min-width: 800px) {
   body {
     flex-direction: row;

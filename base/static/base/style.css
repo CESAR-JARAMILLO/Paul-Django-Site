@@ -68,12 +68,12 @@ a {
 
 .main-container
 h3 {
-    margin-top: 80px;
+    margin-top: 82px;
 }
 
 .main-container
 .tip-container {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
 }
@@ -81,7 +81,7 @@ h3 {
 .main-container
 .tip-container
 i {
-    margin: 0 20px;
+    margin: 0 22px;
 }
 
 .main-container
@@ -89,7 +89,7 @@ i {
 #cash-app {
     height: 60px;
     width: 60px;
-    margin: 0 20px;
+    margin: 0 22px;
 }
 
 .main-container

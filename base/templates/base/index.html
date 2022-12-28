@@ -17,6 +17,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'base/style.css' %}">
+    <style>
+      .main-container
+      h3 {
+      margin-top: 82px;
+      }
+
+      .main-container
+      .tip-container {
+          margin-bottom: 32px;
+          display: flex;
+          justify-content: center;
+      }
+
+      .main-container
+      .tip-container
+      i {
+          margin: 0 22px;
+      }
+
+      .main-container
+      .tip-container
+      #cash-app {
+          height: 60px;
+          width: 60px;
+          margin: 0 22px;
+      }
+
+      .footer-container {
+        margin-top: 80px;
+      }
+    </style>
     <title>Paul Anthony Garcia</title>
 </head>
 <body class="body">
@@ -33,11 +64,11 @@
 
       <main class="main">
         <div class="main-container">
-          {% comment %} <h3>MY VENMO AND CASH-APP</h3>
+          <h3>MY VENMO AND CASH-APP</h3>
           <div class="tip-container container">
             <a href="https://account.venmo.com/u/Picksalot"><i class="fa-brands fa-square-vimeo fa-4x"></i></a>
             <a href="https://cash.app/$Picksalot" class="cash-app"><img id="cash-app" src="{%static 'base/images/cashapp.svg' %}" style="width:60px"></a>
-          </div> {% endcomment %}
+          </div>
           <h2>NEW ALBUM "YOU"</h2>
           <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK">
             <img src="{% static 'base/images/album.png' %}" alt="album 'You'">

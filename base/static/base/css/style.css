@@ -19,7 +19,7 @@ a {
 }
 
 .header {
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url(./images/paul.png);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url(../images/paul.png);
     background-size: cover;
     color: #ddf1f4;
     min-height: 400px;

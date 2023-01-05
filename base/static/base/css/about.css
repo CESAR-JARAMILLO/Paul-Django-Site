@@ -67,3 +67,13 @@ a {
 .btn {
   margin: 24px 0;
 }
+
+@media (min-width: 800px) {
+  main {
+    flex-direction: row;
+  }
+
+  .left-container {
+    margin: auto;
+  }
+}

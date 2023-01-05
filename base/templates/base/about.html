@@ -16,18 +16,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'base/css/style.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'base/css/about.css' %}">
     <title>About</title>
 </head>
 <body>
   <main>
     <div class="left-container container">
-      <p>Paul is a musician and songwriter from Long Beach, California who has been carrying on his family's musical tradition for the past 20 years. He has performed with various bands and has gained recognition as a solo act in the Long Beach area. His Latin-American Songwriter Experience has captured the attention of audiences in many cities across the US. Paul also plays bass and provides backup vocals in a soul band called Intuitions.</p>
-      <p>To stay updated on Paul's upcoming shows and new album releases, follow him on his social media accounts by searching @picksalot. You can also listen to his latest release, "You," on all music streaming platforms. If you're interested in booking him for a performance, please use the contact information provided at the bottom of each page.</p>
+      <p>I am a proficient musician and songwriter based in Long Beach, California. With over 20 years of experience in the music industry, I have honed my skills and developed a unique sound that has garnered attention from audiences across the United States. My Latin-American influenced music has captured the hearts of listeners in numerous cities, and I am highly sought after for both solo performances and as a member of the soul band <a href="https://www.instagram.com/theintuitions">Intuitions</a>, where I play bass and provide backup vocals.</p>
+      <p>To stay up to date on my latest album releases and upcoming show dates, be sure to follow me on social media <a href="https://www.instagram.com/picksalot/">@picksalot</a>. You can also stream my music on all major platforms, including the hit single <a href="https://open.spotify.com/album/2NjdQYmz1wG1F2Pvia50cz">"You"</a>.</p>
+      <p>If you are interested in booking me for a performance or have any other inquiries, please utilize the link below to contact me. Don't miss out on the chance to experience my dynamic music live!</p>
+
+      <a class="btn btn-primary btn-lg" href="{% url 'base:contact' %}">Contact Me</a>
     </div>
     <div class="right-container container">
       <h1>Hi, I'm Paul</h1>
-      <img src="{% static 'base/images/paul-about.png' %}">
+      <div class="inner-container">
+        <img src="{% static 'base/images/paul-about.png' %}">
+      </div>
     </div>
   </main>
 </body>

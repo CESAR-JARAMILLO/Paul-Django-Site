@@ -52,6 +52,20 @@ img {
 }
 
 .left-container
+h2 {
+  font-size: 32px;
+  margin-top: 24px;
+}
+
+.left-container
+hr {
+  width: 40%;
+  border: 2px solid #fff;
+  margin: 24px auto 0 auto;
+
+}
+
+.left-container
 p {
   margin-top: 24px;
 }
@@ -66,6 +80,7 @@ a {
 .left-container
 .btn {
   margin: 24px 0;
+  padding: 20px 30px;
 }
 
 @media (min-width: 800px) {
@@ -74,6 +89,17 @@ a {
   }
 
   .left-container {
-    margin: auto;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

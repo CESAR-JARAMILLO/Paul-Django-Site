@@ -9,6 +9,12 @@ body {
   margin: 0;
 }
 
+#navbar
+.navbar-nav 
+.nav-link {
+  text-align: center;
+}
+
 main {
   display: flex;
   flex-direction: column;

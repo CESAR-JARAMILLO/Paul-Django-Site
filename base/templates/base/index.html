@@ -21,9 +21,11 @@
 </head>
 <body class="body">
 
-  {% include 'base/navbar.html' %}
+  <header>
+    {% include 'base/navbar.html' %}
+  </header>
 
-      <header class="header">
+  <main class="header">
         <div class="overlay">
           <div class="header-container">
                 <h1 class="logo">PAUL ANTHONY GARCIA</h1>
@@ -31,9 +33,9 @@
                 <a href="{% url 'base:contact' %}" class="btn btn-primary">CONTACT ME</a>
           </div>
         </div>
-      </header>
+  </main>
 
-      <main class="main">
+  <section class="main">
         <div class="main-container">
           <h3>MY VENMO AND CASH-APP</h3>
           <div class="tip-container container">
@@ -46,9 +48,9 @@
           </a>
           <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK" class="btn btn-primary">LISTEN</a>
         </div>
-      </main>
+  </section>
 
-      <footer class="footer">
+  <footer class="footer">
         <div class="footer-container">
           <hr class="top-line">
           <a href="https://linktr.ee/Picksalot">
@@ -73,6 +75,6 @@
             </a>
           </div>
         </div>
-      </footer>
+  </footer>
 </body>
 </html>

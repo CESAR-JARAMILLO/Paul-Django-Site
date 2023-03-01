@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     text-align: center;
     text-decoration: none;
 }
 
-.body {
+body {
     background-color: #ddf1f4;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2.5px;
@@ -18,16 +18,17 @@ a {
     text-decoration: none;
 }
 
-.header {
+.hero {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url(../images/paul.png);
     background-size: cover;
     color: #ddf1f4;
-    min-height: 400px;
+    height: 400px;
+    width: 100%;
     margin-top: 30px;
     font-weight: bold;
 }
 
-.header-container {
+.hero-container {
     height: 400px;
     display: flex;
     justify-content: center;
@@ -35,13 +36,13 @@ a {
     position: relative;
 }
 
-.header-container
+.hero-container
 .logo {
     font-weight: 300;
     font-size: 2.5rem;
 }
 
-.header-container
+.hero-container
 .btn {
     position: absolute;
     bottom: 40px;
@@ -54,28 +55,53 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    /* margin: 20px 0; */
 }
 
-.main-container {
+/* .main-container {
     height: 500px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+} */
+
+.main
+.thumbnail-container {
+    margin: 62px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-container
+.main
+.thumbnail-container
 h3 {
-    margin-top: 82px;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.main
+.thumbnail-container
+.btn.watch-btn {
+    color: #fff;
+    background-color: #0b93b8;
+    width: 140px;
+    text-align: center;
 }
 
 .main-container
 .tip-container {
-    margin-bottom: 32px;
+    margin: 56px 0;
+}
+
+.main-container
+.tip-container
+.tip-container-icons {
     display: flex;
     justify-content: center;
+    margin-top: 22px;
 }
 
 .main-container
@@ -98,10 +124,13 @@ h2 {
 }
 
 .main-container .btn {
-    background-color: #1DAFD6;
+    background-color: #0b93b8;
     border: none;
     padding: 14px 36px;
+    margin: 0 auto;
     margin-top: 20px;
+    display: block;
+    width: 140px;
 }
 
 .footer-container {
@@ -110,7 +139,7 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .footer-container
@@ -149,8 +178,8 @@ a {
 }
 
 @media (min-width: 800px) {
-    .header {
+    .hero {
         width: 80%;
-        margin: 30px auto;
+        margin: 0 auto;
     }
 }

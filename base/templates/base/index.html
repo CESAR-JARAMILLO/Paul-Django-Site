@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
     <title>Paul Anthony Garcia</title>
 </head>
-<body class="body">
+<body>
 
   <header>
     {% include 'base/navbar.html' %}
   </header>
 
-  <main class="header">
+  <main class="hero">
         <div class="overlay">
-          <div class="header-container">
+          <div class="hero-container">
                 <h1 class="logo">PAUL ANTHONY GARCIA</h1>
                 
                 <a href="{% url 'base:contact' %}" class="btn btn-primary">CONTACT ME</a>
@@ -37,17 +37,25 @@
 
   <section class="main">
         <div class="main-container">
-          <h3>MY VENMO AND CASH-APP</h3>
-          <div class="tip-container container">
-            <a href="https://account.venmo.com/u/Picksalot"><i class="fa-brands fa-square-vimeo fa-4x"></i></a>
-            <a href="https://cash.app/$Picksalot" class="cash-app"><img id="cash-app" src="{%static 'base/images/cashapp.svg' %}" style="width:60px"></a>
+          <div class="thumbnail-container">
+            <h3>NEW VIDEO OUT NOW</h3>
+            <a href="https://youtu.be/9gCAlwJphFY"><img class="img-fluid contain" src="{% static 'base/images/enough-thumbnail.png' %}" alt="thumbnail"></a>
+            <a href="https://youtu.be/9gCAlwJphFY" class="btn watch-btn">WATCH</a>
           </div>
           <h2>NEW ALBUM "YOU"</h2>
           <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK">
             <img src="{% static 'base/images/album.png' %}" alt="album 'You'">
           </a>
           <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK" class="btn btn-primary">LISTEN</a>
+          <div class="tip-container container">
+            <h3>MY VENMO AND CASH-APP</h3>
+            <div class="tip-container-icons">
+              <a href="https://account.venmo.com/u/Picksalot"><i class="fa-brands fa-square-vimeo fa-4x"></i></a>
+              <a href="https://cash.app/$Picksalot" class="cash-app"><img id="cash-app" src="{%static 'base/images/cashapp.svg' %}" style="width:60px"></a>
+              </div>
+          </div>
         </div>
+        
   </section>
 
   <footer class="footer">

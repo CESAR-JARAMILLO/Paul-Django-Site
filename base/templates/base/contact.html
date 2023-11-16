@@ -1,56 +1,64 @@
-{# Load the tag library #}
-{% load bootstrap5 %}
+{# Load the tag library #} {% load bootstrap5 %} {# Load CSS and JavaScript #}
+{% bootstrap_css %} {% bootstrap_javascript %} {# Display
+django.contrib.messages as Bootstrap alerts #} {% bootstrap_messages %} {% load
+static %}
 
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-
-{# Display django.contrib.messages as Bootstrap alerts #}
-{% bootstrap_messages %}
-
-{% load static %}
-
-<!DOCTYPE>
+<!DOCTYPE >
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'base/css/contact.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CP5YN235VZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CP5YN235VZ");
+    </script>
+    <!-- End Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'base/css/contact.css' %}" />
     <title>Contact Me</title>
   </head>
   <body>
+    <header>{% include 'base/navbar.html' %}</header>
 
-    <header>
-      {% include 'base/navbar.html' %}
-    </header>
-    
     <main>
       <div class="contact-text">
         <h1>Get In Touch With Me</h1>
-  
-        <p>Thank you for visiting my website! I am a musician based in Long Beach, CA and I offer a range of services.</p>
-  
-        <p>To book me for a gig or to inquire about my services, please use the form or contact me at the following email address:</p>
-  
-        <p>Email: <a class='email' href="mailto:picslotoguitar@gmail.com">picslotoguitar@gmail.com</a></p>
+
+        <p>
+          Thank you for visiting my website! I am a musician based in Long
+          Beach, CA and I offer a range of services.
+        </p>
+
+        <p>
+          To book me for a gig or to inquire about my services, please use the
+          form or contact me at the following email address:
+        </p>
+
+        <p>
+          Email:
+          <a class="email" href="mailto:picslotoguitar@gmail.com"
+            >picslotoguitar@gmail.com</a
+          >
+        </p>
       </div>
-  
+
       <div class="form-container">
-        
-  
-        <form method='POST' action='.' class="form">
+        <form method="POST" action="." class="form">
           <h2 id="form-title">Contact Form</h2>
-          {% csrf_token %}
-  
-          {% bootstrap_form form %}
-  
-          {% bootstrap_button "Submit" button_type="submit" button_class="btn-primary" size="lg" %}
-  
+          {% csrf_token %} {% bootstrap_form form %} {% bootstrap_button
+          "Submit" button_type="submit" button_class="btn-primary" size="lg" %}
         </form>
       </div>
     </main>
-    
-
   </body>
 </html>

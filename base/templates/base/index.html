@@ -1,88 +1,115 @@
-{# Load the tag library #}
-{% load bootstrap5 %}
-
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-
-
-{% load static %}
-
+{# Load the tag library #} {% load bootstrap5 %} {# Load CSS and JavaScript #}
+{% bootstrap_css %} {% bootstrap_javascript %} {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CP5YN235VZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CP5YN235VZ");
+    </script>
+    <!-- End Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}" />
     <title>Paul Anthony Garcia</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>{% include 'base/navbar.html' %}</header>
 
-  <header>
-    {% include 'base/navbar.html' %}
-  </header>
+    <main class="hero">
+      <div class="overlay">
+        <div class="hero-container">
+          <h1 class="logo">PAUL ANTHONY GARCIA</h1>
 
-  <main class="hero">
-        <div class="overlay">
-          <div class="hero-container">
-                <h1 class="logo">PAUL ANTHONY GARCIA</h1>
-                
-                <a href="{% url 'base:contact' %}" class="btn btn-primary">CONTACT ME</a>
+          <a href="{% url 'base:contact' %}" class="btn btn-primary"
+            >CONTACT ME</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <section class="main">
+      <div class="main-container">
+        <div class="thumbnail-container">
+          <h3>NEW VIDEO OUT NOW</h3>
+          <a href="https://youtu.be/9gCAlwJphFY"
+            ><img
+              class="img-fluid contain"
+              src="{% static 'base/images/enough-thumbnail.png' %}"
+              alt="thumbnail"
+          /></a>
+          <a href="https://youtu.be/9gCAlwJphFY" class="btn watch-btn">WATCH</a>
+        </div>
+        <h2>NEW ALBUM "YOU"</h2>
+        <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK">
+          <img src="{% static 'base/images/album.png' %}" alt="album 'You'" />
+        </a>
+        <a
+          href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK"
+          class="btn btn-primary"
+          >LISTEN</a
+        >
+        <div class="tip-container container">
+          <h3>MY VENMO AND CASH-APP</h3>
+          <div class="tip-container-icons">
+            <a href="https://account.venmo.com/u/Picksalot"
+              ><i class="fa-brands fa-square-vimeo fa-4x"></i
+            ></a>
+            <a href="https://cash.app/$Picksalot" class="cash-app"
+              ><img
+                id="cash-app"
+                src="{%static 'base/images/cashapp.svg' %}"
+                style="width: 60px"
+            /></a>
           </div>
         </div>
-  </main>
+      </div>
+    </section>
 
-  <section class="main">
-        <div class="main-container">
-          <div class="thumbnail-container">
-            <h3>NEW VIDEO OUT NOW</h3>
-            <a href="https://youtu.be/9gCAlwJphFY"><img class="img-fluid contain" src="{% static 'base/images/enough-thumbnail.png' %}" alt="thumbnail"></a>
-            <a href="https://youtu.be/9gCAlwJphFY" class="btn watch-btn">WATCH</a>
-          </div>
-          <h2>NEW ALBUM "YOU"</h2>
+    <footer class="footer">
+      <div class="footer-container">
+        <hr class="top-line" />
+        <a href="https://linktr.ee/Picksalot">
+          <h3>FOLLOW</h3>
+        </a>
+        <hr class="bottom-line" />
+        <div class="icons">
+          <a href="https://www.instagram.com/picksalot/">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.reddit.com/user/picslotoguitar">
+            <i class="fa-brands fa-reddit fa-2x"></i>
+          </a>
+          <a href="https://www.youtube.com/@PaulPicksalot">
+            <i class="fa-brands fa-youtube fa-2x"></i>
+          </a>
           <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK">
-            <img src="{% static 'base/images/album.png' %}" alt="album 'You'">
+            <i class="fa-brands fa-spotify fa-2x"></i>
           </a>
-          <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK" class="btn btn-primary">LISTEN</a>
-          <div class="tip-container container">
-            <h3>MY VENMO AND CASH-APP</h3>
-            <div class="tip-container-icons">
-              <a href="https://account.venmo.com/u/Picksalot"><i class="fa-brands fa-square-vimeo fa-4x"></i></a>
-              <a href="https://cash.app/$Picksalot" class="cash-app"><img id="cash-app" src="{%static 'base/images/cashapp.svg' %}" style="width:60px"></a>
-              </div>
-          </div>
-        </div>
-        
-  </section>
-
-  <footer class="footer">
-        <div class="footer-container">
-          <hr class="top-line">
-          <a href="https://linktr.ee/Picksalot">
-            <h3>FOLLOW</h3>
+          <a href="https://www.tiktok.com/@picksalot">
+            <i class="fa-brands fa-tiktok fa-2x"></i>
           </a>
-          <hr class="bottom-line">
-          <div class="icons">
-            <a href="https://www.instagram.com/picksalot/">
-              <i class="fa-brands fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.reddit.com/user/picslotoguitar">
-              <i class="fa-brands fa-reddit fa-2x"></i>
-            </a>
-            <a href="https://www.youtube.com/@PaulPicksalot">
-              <i class="fa-brands fa-youtube fa-2x"></i>
-            </a>
-            <a href="https://open.spotify.com/artist/1SxbAufa9tba1kQaAsMqqK">
-              <i class="fa-brands fa-spotify fa-2x"></i>
-            </a>
-            <a href="https://www.tiktok.com/@picksalot">
-              <i class="fa-brands fa-tiktok fa-2x"></i>
-            </a>
-          </div>
         </div>
-  </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
